@@ -1,0 +1,26 @@
+// ==============================
+// Styles généraux pour l'application
+// ==============================
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: $font-principale;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .global {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  

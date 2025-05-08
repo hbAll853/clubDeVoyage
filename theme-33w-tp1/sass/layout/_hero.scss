@@ -1,0 +1,15 @@
+.hero {
+    background: #e6f0ff;
+    padding: 2rem;
+    text-align: center;
+  
+    &__titre {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+    &__texte {
+      font-size: 1.2rem;
+    }
+  }
+  

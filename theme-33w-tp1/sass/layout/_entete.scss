@@ -1,0 +1,30 @@
+.entete {
+    background-color: $couleur-primaire;
+    padding: 1rem;
+    color: white;
+    font-family: $font-principale;
+  
+    &__contenu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    &__logo {
+      height: 60px;
+    }
+  
+    &__menu {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+  
+      &-item a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+  
