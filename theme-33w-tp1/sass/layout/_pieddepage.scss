@@ -1,11 +1,10 @@
 .pieddepage {
-    padding: 1rem;
-    background-color: $couleur-primaire;
-    color: white;
-    text-align: center;
-  
-    &__texte {
-      font-size: 0.9rem;
-    }
+  background-color: $couleur-primaire;
+  color: $couleur-bouton;
+  text-align: center;
+  padding: 1rem;
+
+  p {
+    margin: 0;
   }
-  
+}

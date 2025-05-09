@@ -1,30 +1,63 @@
 .entete {
-    background-color: $couleur-primaire;
-    padding: 1rem;
+  background-color: #004080;
+  padding: 1rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  &__contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    height: 60px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__menu-item a {
+    text-decoration: none;
     color: white;
-    font-family: $font-principale;
-  
-    &__contenu {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  
-    &__logo {
-      height: 60px;
-    }
-  
-    &__menu {
-      display: flex;
-      list-style: none;
-      gap: 1rem;
-  
-      &-item a {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-      }
+    font-size: 1rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #f2f2f2;
     }
   }
-  
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+  }
+
+  &__bouton {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #004080;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+}

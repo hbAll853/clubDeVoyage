@@ -16,7 +16,7 @@ Text Domain: club-voyage
      Importation des styles de base 
 ============================== */
 @import "base/global";
-@import "base/h1";
+@import "base/typography";
 
 /* ==============================
      Importation des composants
@@ -30,4 +30,4 @@ Text Domain: club-voyage
 @import "layout/galerie";
 @import "layout/hero";
 @import "layout/pieddepage";
-@import "layout/populaire";
+@import "layout/form";

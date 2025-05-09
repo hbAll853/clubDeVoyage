@@ -1,57 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Club de voyage</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Club de Voyage - Mondo Voyages</title>
 </head>
 <body>
-  <header class="entete">
-    <div class="entete__contenu">
-      <img src="images/logo.png" alt="Logo Club" class="entete__logo" />
-      <nav class="entete__nav">
-        <ul class="entete__menu">
-          <li class="entete__menu-item"><a href="#">Aventure</a></li>
-          <li class="entete__menu-item"><a href="#">Culturel</a></li>
-          <li class="entete__menu-item"><a href="#">Zen</a></li>
-          <li class="entete__menu-item"><a href="#">Sport</a></li>
-          <li class="entete__menu-item"><a href="#">Croisière</a></li>
-          <li class="entete__menu-item"><a href="#">Repos</a></li>
-          <li class="entete__menu-item"><a href="#">Paysage</a></li>
-          <li class="entete__menu-item"><a href="#">Pleine nature</a></li>
-        </ul>
-      </nav>
-      <form class="recherche">
-        <input class="recherche__input" type="search" placeholder="Rechercher une destination">
-        <button class="recherche__bouton" type="submit">🔍</button>
-      </form>      
-    </div>
+
+    <!-- Header -->
+    <header class="entete">
+      <div class="entete__contenu">
+          <img src="images/logo.png" alt="Logo Club de Voyage" class="entete__logo">
+          <nav class="entete__nav">
+              <ul class="entete__menu">
+                  <li class="entete__menu-item"><a href="#">Sport</a></li>
+                  <li class="entete__menu-item"><a href="#">Pleine nature</a></li>
+                  <li class="entete__menu-item"><a href="#">Croisière</a></li>
+                  <li class="entete__menu-item"><a href="#">Aventure</a></li>
+                  <li class="entete__menu-item"><a href="#">Culturel</a></li>
+                  <li class="entete__menu-item"><a href="#">Repos</a></li>
+                  <li class="entete__menu-item"><a href="#">Zen</a></li>
+                  <li class="entete__menu-item"><a href="#">Économique</a></li>
+                  <li class="entete__menu-item"><a href="#">Favorite</a></li>
+                  <li class="entete__menu-item"><a href="#">Pays</a></li>
+              </ul>
+          </nav>
+          <form action="#" class="recherche">
+              <input type="search" class="recherche__input" placeholder="Rechercher...">
+              <button class="recherche__bouton">🔍</button>
+          </form>
+      </div>
   </header>
+  
 
-  <section class="hero">
-    <div class="hero__contenu">
-      <h1 class="hero__titre">Voyagez vers des lieux uniques</h1>
-      <p class="hero__texte">Des aventures exclusives pour les membres du club.</p>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Plage paradisiaque" class="hero__image">
+        <div class="hero__overlay">
+            <h1>Voyagez Autrement avec Mondo Voyages !</h1>
+            <p>Découvrez des destinations uniques et inoubliables avec Mondo Voyages.<br>Nous offrons des expériences authentiques, des paysages à couper le souffle et des aventures inspirantes.</p>
+            <button class="cta">S'INSCRIRE</button>
+            <div class="contact-info">
+                <p>300, rue Sherbrooke, Montréal</p>
+                <p>info@mondovoyage.ca | 514-999-7921</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="galerie">
-    <h2 class="galerie__titre">Destinations</h2>
-    <div class="galerie__grille">
-      <img src="images/acores.jpg" alt="Açores" class="galerie__image" />
-      <img src="images/maldives.jpg" alt="Maldives" class="galerie__image" />
-    </div>
-  </section>
+    <!-- Formulaire d'inscription -->
+    <section class="formulaire">
+        <form action="#">
+            <input type="text" placeholder="Nom">
+            <input type="text" placeholder="Prénom">
+            <input type="email" placeholder="Courriel">
+            <input type="tel" placeholder="Téléphone">
+            <button type="submit">S'INSCRIRE</button>
+        </form>
+    </section>
 
-  <section class="populaire">
-    <h2 class="populaire__titre">Offres populaires</h2>
-    <p class="populaire__texte">Bénéficiez d’offres réservées aux membres.</p>
-  </section>
+    <!-- Galerie -->
+    <section class="galerie">
+        <h2>Nos destinations favorites</h2>
+        <div class="galerie__grille">
+            <img src="images/destination1.jpg" alt="Destination 1">
+            <img src="images/destination2.jpg" alt="Destination 2">
+            <img src="images/destination3.jpg" alt="Destination 3">
+            <img src="images/destination4.jpg" alt="Destination 4">
+            <img src="images/destination5.jpg" alt="Destination 5">
+            <img src="images/destination6.jpg" alt="Destination 6">
+        </div>
+    </section>
 
-  <footer class="pieddepage">
-    <p class="pieddepage__texte">&copy; 2025 Club de voyage</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="pieddepage">
+        <p>© 2025 Club de Voyage</p>
+    </footer>
+
 </body>
 </html>
