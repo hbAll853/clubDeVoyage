@@ -116,15 +116,16 @@ p {
   gap: 1.5rem;
   padding: 0;
   margin: 0;
+  color: white;
 }
 .entete__menu-item a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-size: 1rem;
   transition: color 0.3s;
 }
 .entete__menu-item a:hover {
-  color: #f2f2f2;
+  color: #f2f2f2 !important;
 }
 
 .recherche {
