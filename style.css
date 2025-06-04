@@ -165,10 +165,38 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
+
+.galerie__item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+.galerie__item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.galerie__item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
 .galerie__image {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.destination {
+  text-align: center;
+}
+
+.destination__titre {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700; /* gras */
+  color: #004080;
 }
 
 .hero {

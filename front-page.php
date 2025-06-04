@@ -35,17 +35,41 @@ get_header();
     </section>
 
     <!-- Galerie -->
-    <section class="galerie">
-        <h2>Nos destinations favorites</h2>
-        <div class="galerie__grille">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination1.jpg" alt="Destination 1">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination2.jpg" alt="Destination 2">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination3.jpg" alt="Destination 3">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination4.jpg" alt="Destination 4">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination5.jpg" alt="Destination 5">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/destination6.jpg" alt="Destination 6">
-        </div>
-    </section>
+<section class="galerie">
+  <h2 class="galerie__titre">Nos Destinations</h2>
+  <div class="galerie__grille">
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination1.jpg" alt="Bali, Indonésie" class="galerie__image">
+      <h3>Bali, Indonésie</h3>
+      <p>Plages de sable fin, temples majestueux et rizières en terrasses, un paradis exotique à découvrir.</p>
+    </div>
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination2.jpg" alt="Paris, France" class="galerie__image">
+      <h3>Paris, France</h3>
+      <p>La Ville Lumière avec sa Tour Eiffel, ses musées et sa gastronomie inoubliable.</p>
+    </div>
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination3.jpg" alt="Tokyo, Japon" class="galerie__image">
+      <h3>Tokyo, Japon</h3>
+      <p>Un mélange fascinant de traditions et de modernité, entre temples anciens et gratte-ciel futuristes.</p>
+    </div>
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination4.jpg" alt="New York, USA" class="galerie__image">
+      <h3>New York, USA</h3>
+      <p>La ville qui ne dort jamais, entre gratte-ciel, comédies musicales et Central Park.</p>
+    </div>
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination5.jpg" alt="Rome, Italie" class="galerie__image">
+      <h3>Rome, Italie</h3>
+      <p>Histoire et art à chaque coin de rue, du Colisée à la Fontaine de Trevi.</p>
+    </div>
+    <div class="galerie__item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/destination6.jpg" alt="Le Caire, Égypte" class="galerie__image">
+      <h3>Le Caire, Égypte</h3>
+      <p>Les pyramides de Gizeh, le Nil et un riche patrimoine culturel à explorer.</p>
+    </div>
+  </div>
+</section>
 
 </main>
 
