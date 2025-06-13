@@ -1,0 +1,26 @@
+/*
+Theme Name: theme-33w-tp1
+Theme URI: https://referenced.ca
+Author: Hiba Ayech
+Author URI: https://github.com/hbAll853
+Description: Thème de base développé dans le cadre du cours de WordPress
+Text Domain: club-voyage
+*/
+// ===============================
+// Variables & fonctions globales
+// ===============================
+@use 'base/variables' as *;
+@use 'base/global' as *;
+
+// ===============================
+// Layouts
+// ===============================
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+@use 'layout/hero' as *;
+@use 'layout/galerie' as *;
+
+// ===============================
+// Composants
+// ===============================
+@use 'composants/recherche' as *;

@@ -1,0 +1,24 @@
+.recherche {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+  &__input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    width: 250px;
+    outline: none;
+  }
+
+  &__bouton {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: accent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

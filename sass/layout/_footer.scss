@@ -1,0 +1,35 @@
+.pieddepage {
+  background-color: primary;
+  color: white;
+  padding: 2rem 1rem;
+
+  &__contenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+
+  &__colonne h4 {
+    margin-bottom: 1rem;
+  }
+
+  &__colonne ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__colonne a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+}
