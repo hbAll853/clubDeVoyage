@@ -9,13 +9,17 @@
     align-items: center;
   }
 
+  &__logo {
+    width: 5%;
+  }
+
   &__menu {
     display: flex;
     gap: 1.5rem;
     list-style: none;
 
     a {
-      color: white;
+      color: #0e6b6b;
       text-decoration: none;
 
       &:hover {

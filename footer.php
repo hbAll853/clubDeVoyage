@@ -20,7 +20,7 @@
     <!-- Colonne 3 : Recherche -->
     <div class="pieddepage__colonne">
       <h4 class="pieddepage__titre">Recherche</h4>
-      <form class="recherche">
+      <form>
         <input type="text" class="recherche__input" placeholder="Rechercher...">
         <button type="submit" class="recherche__bouton">🔍</button>
       </form>
@@ -30,7 +30,7 @@
     <div class="pieddepage__colonne">
       <h4 class="pieddepage__titre">Suivez-nous</h4>
       <a href="https://github.com/hbAll853" target="_blank">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/github.svg" alt="GitHub" width="24">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/github.png" alt="GitHub" width="24">
       </a>
     </div>
 

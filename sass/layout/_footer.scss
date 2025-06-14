@@ -16,12 +16,25 @@
 
   &__colonne {
     text-align: left;
+
   }
 
   &__titre {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__liens {
@@ -51,8 +64,7 @@
 
   .recherche__bouton {
     padding: 0.5rem;
-    background-color: $accent;
-    color: $white;
+    background-color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
