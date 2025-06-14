@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  height: 700px;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px overlay;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .contact-info {
+      margin-top: 1rem;
+    }
+  }
+}

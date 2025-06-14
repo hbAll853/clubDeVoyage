@@ -1,0 +1,30 @@
+.galerie {
+  padding: 2rem;
+  text-align: center;
+
+  &__grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  &__item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+
+    h3 {
+      margin-top: 0.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  }
+}

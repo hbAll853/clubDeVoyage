@@ -1,0 +1,67 @@
+@use '../base/variables' as *;
+
+.pieddepage {
+  background-color: $primary;
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Montserrat", sans-serif;
+
+  &__contenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__colonne {
+    text-align: left;
+  }
+
+  &__titre {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  &__liens {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .recherche__input {
+    max-width: 200px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .recherche__bouton {
+    padding: 0.5rem;
+    background-color: $accent;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__desc {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: white
+  }
+}

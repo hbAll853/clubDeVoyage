@@ -1,25 +1,21 @@
 @charset "UTF-8";
 /*
-Theme Name: theme-33w-tp1
-Theme URI: https://referenced.ca
+Theme Name: Theme 33W TP1
+Theme URI: https://gftnth00.mywhc.ca/33we_02/
 Author: Hiba Ayech
-Author URI: https://github.com/hbAll853
-Description: Thème de base développé dans le cadre du cours de WordPress
-Text Domain: club-voyage
+Author URI: https://github.com/hbAll853 
+Description: Thème personnalisé réalisé dans le cadre du TP1 du cours 582-33W-MA. Contient une page d’accueil, une page de catégorie, une page article (single), un menu responsive et un pied de page structuré.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive, custom-theme, tp1, wordpress
+Text Domain: theme-33w-tp1
 */
-/* ==============================
-     Importation des variables 
-============================== */
-/* ==============================
-     Importation des styles de base 
-============================== */
 html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -29,38 +25,150 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: #f4f4f4;
+  color: text;
+  background-color: light-gray;
 }
 
 .global {
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
   padding: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  margin: 0.5rem 0;
+.entete {
+  background-color: primary;
+  color: white;
+  padding: 1rem;
+}
+.entete__contenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.entete__menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.entete__menu a {
+  color: white;
+  text-decoration: none;
+}
+.entete__menu a:hover {
+  text-decoration: underline;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+.pieddepage {
+  background-color: #356494;
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+.pieddepage__contenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pieddepage__colonne {
+  text-align: left;
+}
+.pieddepage__titre {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.pieddepage__liens {
+  list-style: none;
+  padding: 0;
+}
+.pieddepage__liens li {
+  margin-bottom: 0.5rem;
+}
+.pieddepage__liens a {
+  color: white;
+  text-decoration: none;
+}
+.pieddepage__liens a:hover {
+  text-decoration: underline;
+}
+.pieddepage .recherche__input {
+  max-width: 200px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.pieddepage .recherche__bouton {
+  padding: 0.5rem;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pieddepage__desc {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: white;
 }
 
-p {
-  margin: 0.5rem 0;
+.hero {
+  position: relative;
+  height: 700px;
+}
+.hero__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__overlay {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+  max-width: 600px;
+  text-shadow: 1px 1px 5px overlay;
+}
+.hero__overlay h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.hero__overlay p {
+  font-size: 1.2rem;
+}
+.hero__overlay .contact-info {
+  margin-top: 1rem;
 }
 
-/* ==============================
-     Importation des composants
-============================== */
+.galerie {
+  padding: 2rem;
+  text-align: center;
+}
+.galerie__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.galerie__image {
+  width: 100%;
+  border-radius: 8px;
+}
+.galerie__item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.galerie__item h3 {
+  margin-top: 0.5rem;
+}
+.galerie__item p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
 .recherche {
   display: flex;
   align-items: center;
@@ -77,196 +185,9 @@ p {
 .recherche__bouton {
   margin-left: 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: white;
-  color: #004080;
+  background-color: accent;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.2s;
-}
-.recherche__bouton:hover {
-  background-color: #dbe8ff;
-}
-.recherche__bouton i {
-  margin-right: 5px;
-}
-
-/* ==============================
-     Importation du layout 
-============================== */
-.entete {
-  background-color: #356494;
-  padding: 1rem;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-.entete__contenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.entete__logo {
-  height: 60px;
-}
-.entete__nav {
-  display: flex;
-}
-.entete__menu {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  color: white;
-}
-.entete__menu-item a {
-  text-decoration: none;
-  color: white !important;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-.entete__menu-item a:hover {
-  color: #f2f2f2 !important;
-}
-
-.recherche {
-  display: flex;
-  align-items: center;
-}
-.recherche__input {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: none;
-}
-.recherche__bouton {
-  margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: #004080;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 4px;
-}
-
-.galerie {
-  padding: 2rem;
-  text-align: center;
-}
-.galerie__titre {
-  margin-bottom: 1rem;
-}
-.galerie__grille {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.galerie__item {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-}
-.galerie__item h3 {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-}
-.galerie__item p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.galerie__image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.destination {
-  text-align: center;
-}
-
-.destination__titre {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 700; /* gras */
-  color: #004080;
-}
-
-.hero {
-  position: relative;
-  height: 700px;
-}
-.hero__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero__overlay {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  color: white;
-  max-width: 600px;
-  line-height: 1.5;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
-.hero__overlay h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-.hero__overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-.hero__overlay .cta {
-  padding: 0.5rem 2rem;
-  margin-top: 1rem;
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.hero__overlay .contact-info {
-  margin-top: 1rem;
-  font-size: 1rem;
-}
-
-.pieddepage {
-  background-color: #356494;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-.pieddepage p {
-  margin: 0;
-}
-
-.formulaire {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem auto;
-  justify-content: center;
-}
-.formulaire__input,
-.formulaire__btn {
-  padding: 0.5rem 1rem;
-  border: 1px solid #356494;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-.formulaire__btn {
-  background-color: #004080;
-  color: #fff;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

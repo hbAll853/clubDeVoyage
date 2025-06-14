@@ -1,0 +1,26 @@
+.entete {
+  background-color: primary;
+  color: white;
+  padding: 1rem;
+
+  &__contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

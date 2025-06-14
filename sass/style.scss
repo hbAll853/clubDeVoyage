@@ -1,0 +1,20 @@
+/*
+Theme Name: Theme 33W TP1
+Theme URI: https://gftnth00.mywhc.ca/33we_02/
+Author: Hiba Ayech
+Author URI: https://github.com/hbAll853 
+Description: Thème personnalisé réalisé dans le cadre du TP1 du cours 582-33W-MA. Contient une page d’accueil, une page de catégorie, une page article (single), un menu responsive et un pied de page structuré.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive, custom-theme, tp1, wordpress
+Text Domain: theme-33w-tp1
+*/
+
+@use 'base/variables';
+@use 'base/global';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/hero';
+@use 'layout/galerie';
+@use 'composants/recherche';
