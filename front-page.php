@@ -46,6 +46,9 @@ get_header();
       </form>
     </section>
 
+  <!-- Destinations populaires (section dynamique depuis carte.php) -->
+  <?php get_template_part('gabarit/carte'); ?>
+
     <!-- Galerie -->
 <section class="galerie">
   <h2 class="galerie__titre">Nos Destinations</h2>

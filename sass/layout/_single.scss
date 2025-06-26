@@ -1,0 +1,48 @@
+.single {
+  padding: 2rem 0;
+
+  .single__article {
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+
+  .single__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .single__contenu {
+    padding: 2rem;
+  }
+
+  .single__titre {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .single__date {
+    font-size: 0.9rem;
+    color: #2e2c2c;
+    margin-bottom: 1rem;
+  }
+
+  .single__categories {
+    font-size: 0.95rem;
+    color: #f69c83;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .single__texte {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

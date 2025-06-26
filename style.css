@@ -251,6 +251,85 @@ body {
   cursor: pointer;
 }
 
+.populaire {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.populaire__titre {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e2a38;
+}
+.populaire__grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.carte {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+.carte__image {
+  position: relative;
+}
+.carte__image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.carte__image .carte__etoile {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #fff8cc;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #ffbb00;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.carte__contenu {
+  padding: 1rem;
+}
+.carte__contenu h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+.carte__contenu p {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+.carte__temperature {
+  background: #f0f6fb;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.carte__temperature p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+.carte__bouton {
+  display: inline-block;
+  background-color: #005b96;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.carte__bouton:hover {
+  background-color: #003f6e;
+}
+
 .inscription {
   display: flex;
   justify-content: center;
@@ -307,6 +386,47 @@ body {
   .inscription button.btn {
     margin-left: 0;
   }
+}
+
+.single {
+  padding: 2rem 0;
+}
+.single .single__article {
+  background-color: #d9d9d9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.single .single__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.single .single__contenu {
+  padding: 2rem;
+}
+.single .single__titre {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+.single .single__date {
+  font-size: 0.9rem;
+  color: #2e2c2c;
+  margin-bottom: 1rem;
+}
+.single .single__categories {
+  font-size: 0.95rem;
+  color: #f69c83;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.single .single__texte {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+.single .single__texte p {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
