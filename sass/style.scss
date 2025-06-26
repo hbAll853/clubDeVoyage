@@ -11,10 +11,14 @@ Tags: responsive, custom-theme, tp1, wordpress
 Text Domain: theme-33w-tp1
 */
 
-@use 'base/variables';
-@use 'base/global';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/hero';
-@use 'layout/galerie';
-@use 'composants/recherche';
+
+@use "base/global";
+@use "base/variables";
+
+@use "layout/header";
+@use "layout/footer";
+@use "layout/hero";
+@use "layout/galerie";
+
+@use "composants/recherche";
+@use "layout/form";

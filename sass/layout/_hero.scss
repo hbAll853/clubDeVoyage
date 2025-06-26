@@ -10,23 +10,51 @@
 
   &__overlay {
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 10%;
     color: white;
     max-width: 600px;
-    text-shadow: 1px 1px 5px overlay;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.4); // fond foncé transparent
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 
     h1 {
       font-size: 3.5rem;
+      font-weight: 700;
       margin-bottom: 1rem;
+      line-height: 1.2;
     }
 
     p {
       font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      background-color: white;
+      color: #1f3f66;
+      font-weight: 600;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background-color: #1f3f66;
+        color: white;
+      }
     }
 
     .contact-info {
       margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #f0f0f0;
     }
   }
 }

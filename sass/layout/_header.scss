@@ -1,7 +1,8 @@
 .entete {
-  background-color: primary;
+  background-color: #356494;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  margin: 0;
 
   &__contenu {
     display: flex;
@@ -19,7 +20,9 @@
     list-style: none;
 
     a {
-      color: #0e6b6b;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
       text-decoration: none;
 
       &:hover {

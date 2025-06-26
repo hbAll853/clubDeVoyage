@@ -24,14 +24,26 @@ get_header();
     </section>
 
     <!-- Formulaire d'inscription -->
-    <section class="formulaire">
-        <form action="#">
-            <input type="text" placeholder="Nom">
-            <input type="text" placeholder="Prénom">
-            <input type="email" placeholder="Courriel">
-            <input type="tel" placeholder="Téléphone">
-            <button type="submit">S'INSCRIRE</button>
-        </form>
+    <section class="inscription">
+      <form class="inscription__form">
+        <div class="champ">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" placeholder="Écrivez votre nom" required>
+        </div>
+        <div class="champ">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Écrivez votre prénom" required>
+        </div>
+        <div class="champ">
+          <label for="email">Courriel</label>
+          <input type="email" id="email" name="email" placeholder="Écrivez votre courriel" required>
+        </div>
+        <div class="champ">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="Écrivez votre téléphone" required>
+        </div>
+        <button type="submit" class="btn">S'INSCRIRE</button>
+      </form>
     </section>
 
     <!-- Galerie -->
