@@ -1,30 +1,50 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template pour afficher un article (single destination)
+ */
+get_header();
+?>
 
-<main class="single global">
+<main class="single">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <article class="single__article">
-      
-      <?php if (has_post_thumbnail()) : ?>
-        <div class="single__image">
-          <?php the_post_thumbnail('large'); ?>
-        </div>
-      <?php endif; ?>
-
-      <div class="single__contenu">
-        <h1 class="single__titre"><?php the_title(); ?></h1>
-        <p class="single__date"><?= get_the_date(); ?></p>
-
-        <div class="single__categories">
-          <?php the_category(' • '); ?>
-        </div>
+      <article class="single__contenu">
+        <?php the_post_thumbnail('large', ['class' => 'single__image']); ?>
 
         <div class="single__texte">
-          <?php the_content(); ?>
-        </div>
-      </div>
+          <h1 class="single__titre"><?php the_title(); ?></h1>
 
-    </article>
-  <?php endwhile; endif; ?>
+          <div class="single__infos">
+            <div class="temperature">
+              <p><span class="pastille pastille--bleu"></span><strong>Température min :</strong> <?php the_field('temperature_min'); ?>°C</p>
+              <p><span class="pastille pastille--rouge"></span><strong>Température max :</strong> <?php the_field('temperature_max'); ?>°C</p>
+              <p><span class="pastille pastille--orange"></span><strong>Température moyenne :</strong> <?php the_field('temperature_moy'); ?>°C</p>
+            </div>
+
+            <p class="single__appreciation">
+              <strong>Appréciation :</strong>
+              <?php
+              $note = get_field('appreciation');
+              if ($note) {
+                echo $note . ' <span class="etoile">⭐</span>';
+              }
+              ?>
+            </p>
+          </div>
+
+          <div class="single__description">
+            <?php the_content(); ?>
+          </div>
+
+          <p class="single__categories">
+            <strong>Catégories :</strong>
+            <?php the_category(', '); ?>
+          </p>
+
+          <a href="<?php echo site_url(); ?>" class="single__retour">← Retour à la galerie</a>
+        </div>
+      </article>
+  <?php endwhile;
+  endif; ?>
 </main>
 
 <?php get_footer(); ?>

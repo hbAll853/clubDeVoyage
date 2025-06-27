@@ -24,9 +24,10 @@
             ?>
         </nav>
 
-        <form action="#" class="recherche">
-            <input type="search" class="recherche__input" placeholder="Rechercher...">
-            <button class="recherche__bouton">🔍</button>
+        <form action="<?php echo home_url('/'); ?>" method="get" class="form-recherche">
+            <input type="text" name="s" placeholder="Rechercher..." value="<?php the_search_query(); ?>" />
+            <button type="submit">🔍</button>
         </form>
+
     </div>
 </header>

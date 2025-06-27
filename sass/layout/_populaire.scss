@@ -1,0 +1,17 @@
+.populaire {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+
+  &__titre {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #1e2a38;
+  }
+
+  &__grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}
