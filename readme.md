@@ -31,7 +31,6 @@ style.css : styles responsive & animation dans le Hero
 8. Utilisation de get_theme_mod() pour tous les contenus personnalisables
 
 ## Liens
-
 **Dépôt GitHub** 
 https://github.com/hbAll853/theme-33w-tp1
 
