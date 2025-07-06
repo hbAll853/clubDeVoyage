@@ -11,6 +11,7 @@ functions/composant.php : fonctions PHP pour les icônes sociales et les vagues 
 header.php, footer.php, front-page.php, hero.php, populaire.php, etc.
 gabarit/ : composants modulaires comme carte.php, galerie.php
 style.css : styles responsive & animation dans le Hero
+
 ## Fonctionnalités ajoutées dans cette partie
 
 1. Personnalisation complète de la section Hero :
