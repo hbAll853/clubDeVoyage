@@ -14,7 +14,6 @@ gabarit/ : composants modulaires comme carte.php, galerie.php
 style.css : styles responsive & animation dans le Hero
 
 ## Fonctionnalités ajoutées dans cette partie
-
 1. Personnalisation complète de la section Hero :
  - Texte animé dynamique (titre, description)
  - Auteur du thème
