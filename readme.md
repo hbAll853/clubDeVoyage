@@ -1,9 +1,10 @@
 # TP2 – Club de Voyage – Partie 2
 
 ## Description du projet
-Cette seconde partie du TP2 vise à enrichir le thème WordPress développé précédemment en intégrant des fonctionnalités de personnalisation via le Customizer WordPress. Elle s'inscrit dans la continuité du TP1, tout en mettant l'accent sur l'autonomie et la réutilisabilité du code.
+u78Cette seconde partie du TP2 vise à enrichir le thème WordPress développé précédemment en intégrant des fonctionnalités de personnalisation via le Customizer WordPress. Elle s'inscrit dans la continuité du TP1, tout en mettant l'accent sur l'autonomie et la réutilisabilité du code.
 L'objectif principal est d’ajouter des options dynamiques pour personnaliser les sections Hero et Footer à partir du tableau de bord WordPress, sans modifier le code. Ces options incluent : couleurs, textes, adresses, images et icônes.
 Le site reste centré sur les destinations de voyage, présentées sous forme de cartes dynamiques et triées par catégories.
+
 ## Fichiers & Structure
 functions/mon-customizer.php : ajoute les options dans le Customizer pour Hero et Footer
 functions/configuration-general.php : enregistre les supports du thème, les styles/scripts, et modifie la requête d’accueil
