@@ -32,7 +32,7 @@ style.css : styles responsive & animation dans le Hero
 
 ## Liens
 **Dépôt GitHub** 
-https://github.com/hbAll853/theme-33w-tp1
+https://github.com/hbAll853/theme-33w-tp1/
 
 **Site WordPress déployé**
 https://gftnth00.mywhc.ca/33we_02/
